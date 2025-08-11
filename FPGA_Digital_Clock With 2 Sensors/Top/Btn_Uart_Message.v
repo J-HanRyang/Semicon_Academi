@@ -1,6 +1,20 @@
 `timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company          : Semicon_Academi
+// Engineer         : Joobin Hwang with Jiyun_Han
+// 
+// Create Date	    : 2025/07/27
+// Design Name      : Project_Digital_Clock
+// Module Name      : Btn_Uart_Message
+// Target Devices   : Basys3
+// Tool Versions    : 2020.2
+// Description      : PC Commend & Message
+//
+// Revision 	    : 2025/07/27    --Start--
+//                    2025/07/28    --Finish--
+//////////////////////////////////////////////////////////////////////////////////
 
-module btn_uart_message (
+module Btn_Uart_Message (
     input           iClk,
     input           iRst, 
 
@@ -25,14 +39,14 @@ module btn_uart_message (
 );
 
     // 상태 정의
-    localparam IDLE = 4'd0;
-    localparam DATA = 4'd1;
-    localparam DATA_1 = 4'd2;
-    localparam DATA_2 = 4'd3;
-    localparam DATA_3 = 4'd4;
-    localparam DATA_4 = 4'd5;
-    localparam SEND = 4'd6;
-    localparam DONE = 4'd7;
+    localparam IDLE     = 4'd0;
+    localparam DATA     = 4'd1;
+    localparam DATA_1   = 4'd2;
+    localparam DATA_2   = 4'd3;
+    localparam DATA_3   = 4'd4;
+    localparam DATA_4   = 4'd5;
+    localparam SEND     = 4'd6;
+    localparam DONE     = 4'd7;
 
     reg [2:0] state_reg, state_next;
     reg [5:0] msg_idx_reg, msg_idx_next;
@@ -40,7 +54,7 @@ module btn_uart_message (
     reg       en_btn_reg, en_btn_next;
     reg [7:0] btn_data_reg, btn_data_next;
 
-    reg [7:0] msg_mem_reg [0:31];   // 최대 32바이트 지원
+    reg [7:0] msg_mem_reg [0:31];   // Max 32Byte
     reg [7:0] msg_mem_next[0:31];
     reg run_stop_reg, run_stop_next; 
     reg run_stop_swreg, run_stop_swnext; 
