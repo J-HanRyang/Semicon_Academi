@@ -4,8 +4,8 @@
 // Engineer         : Jiyun_Han
 // 
 // Create Date	    : 2025/07/22
-// Design Name      : MUX_PC_FPGA
-// Module Name      : Project_UART
+// Design Name      : Project_UART_FIFO
+// Module Name      : MUX_PC_FPGA
 // Target Devices   : Basys3
 // Tool Versions    : 2020.2
 // Description      : Select PC_FPGA Mode
