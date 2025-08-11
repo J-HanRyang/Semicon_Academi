@@ -1,11 +1,11 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company          : Semicon_Academi
-// Engineer         : Jiyun_Han
+// Engineer         : Semicon_Academi_Group_7
 // 
 // Create Date	    : 2025/07/24
-// Design Name      : Project_Sensor
-// Module Name      : Project_Sensor
+// Design Name      : Project_Digital_Clock
+// Module Name      : Project_Digital_Clock
 // Target Devices   : Basys3
 // Tool Versions    : 2020.2
 // Description      : Final Project Top Module
@@ -13,7 +13,7 @@
 // Revision 	    : 
 //////////////////////////////////////////////////////////////////////////////////
 
-module Project_Sensor(
+module Project_Digital_Clock(
     // Clock & Reset
     input           iClk,
     input           iRst,
@@ -51,7 +51,6 @@ module Project_Sensor(
     /***********************************************
     // Reg & Wire
     ***********************************************/
-   
     // FPGA Butten / SW
     wire            wFPGA_Set;
     wire    [4:0]   wFPGA_Mode;
@@ -102,6 +101,7 @@ module Project_Sensor(
     wire            wTx_Push, wTx_CTS_Push, wTx_ULTRA_Push, wTx_UHT11_Push;
     wire            wTx_Full;
     wire    [7:0]   wTx_Data;
+    
     //UART BTN 
     wire    [7:0]   w_btn_data;
     wire    [7:0]   w_uart_data;
@@ -111,7 +111,7 @@ module Project_Sensor(
     // Instantiation
     ***********************************************/
     //FPGA Button press sent to pc 
-    btn_uart_message U_BTN_UART_MESSAGE(
+    Btn_Uart_Message U_BTN_UART_MESSAGE(
         .iClk           (iClk),
         .iRst           (iRst),
         .iRx_Data       (wRx_Data),
