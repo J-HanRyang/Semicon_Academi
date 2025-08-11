@@ -54,7 +54,7 @@ module Timer_DP(
     assign  oEnd        =   (omSec == 0 &&
                              oSec  == 0 &&
                              oMin  == 0 &&
-                             oHour == 0         )   == 1 ? 1'b1 : 1'b0;
+                             oHour == 0    )    == 1 ? 1'b1 : 1'b0;
 
 
     /***********************************************
