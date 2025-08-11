@@ -4,7 +4,7 @@
 // Engineer         : Jiyun_Han
 // 
 // Create Date	    : 2025/07/25
-// Design Name      : Project_Sensor
+// Design Name      : DHT_Sensor
 // Module Name      : DHT_Ctrl
 // Target Devices   : Basys3
 // Tool Versions    : 2020.2
