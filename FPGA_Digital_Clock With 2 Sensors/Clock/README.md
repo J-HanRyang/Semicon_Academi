@@ -11,3 +11,6 @@
   - **Digital Splitters**: This module is designed to split a number, ranging from 0 to 100, into individual digits for display.
   - **Muxs** : The output on the 7-segment display varies depending on the selected mode.
   - **Decoders** : This module converts decimal numbers into a format suitable for a 7-segment display.
+
+#### Referenced Document
+Please find the project details and diagrams in the uploaded PDF file.
