@@ -4,7 +4,7 @@
 // Engineer         : Jiyun_Han
 // 
 // Create Date	    : 2025/07/18
-// Design Name      : UART_FIFO
+// Design Name      : Project_UART_FIFO
 // Module Name      : Register_File
 // Target Devices   : Basys3
 // Tool Versions    : 2020.2
@@ -26,9 +26,7 @@ module Register_File(
 );
 
     // Reg & Wire
-    //reg     [7:0]   rRdData;
     reg     [7:0]   rMem[0:31];
-
 
     always  @(posedge iClk)
     begin
@@ -39,19 +37,5 @@ module Register_File(
     end
 
     assign  oRdData = iRd ? rMem[iRdAddr] : 8'hz;
-
-/*
-    always  @(posedge iClk)
-    begin
-        if (iWr)
-            rMem[iWrAddr]   <= iWrData;
-        else if (iRd)
-            rRdData         <= rMem[iRdAddr];
-        else
-            rRdData         <= rRdData;
-    end
-
-    assign  oRdData = rRdData;
-*/
 
 endmodule
