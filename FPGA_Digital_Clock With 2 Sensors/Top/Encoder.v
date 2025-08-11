@@ -23,6 +23,7 @@ module Encoder(
     output  [7:0]   oAscii
     );
 
+    // Reg & Wire
     reg     [7:0]   rAscii;
 
     always  @(posedge iClk, posedge iRst)
