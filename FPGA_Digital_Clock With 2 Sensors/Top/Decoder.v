@@ -117,6 +117,4 @@ module Decoder(
     assign  oBtn_L  =   rBtn_Cur[1];
     assign  oBtn_R  =   rBtn_Cur[0];
 
-    assign  oTime_En = (iAscii == "X") ? 1 : 0; //Time Display
-
 endmodule
