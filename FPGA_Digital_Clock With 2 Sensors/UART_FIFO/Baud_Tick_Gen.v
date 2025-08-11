@@ -4,7 +4,7 @@
 // Engineer         : Jiyun_Han
 // 
 // Create Date	    : 2025/07/15
-// Design Name      : UART_FIFO
+// Design Name      : Project_UART_FIFO
 // Module Name      : Baud_Tick_Gen
 // Target Devices   : Basys3
 // Tool Versions    : 2020.2
