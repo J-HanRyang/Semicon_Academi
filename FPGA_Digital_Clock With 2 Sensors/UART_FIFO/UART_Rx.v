@@ -4,7 +4,7 @@
 // Engineer         : Jiyun_Han
 // 
 // Create Date	    : 2025/07/17
-// Design Name      : UART_FIFO
+// Design Name      : Project_UART_FIFO
 // Module Name      : UART_Rx
 // Target Devices   : Basys3
 // Tool Versions    : 2020.2
