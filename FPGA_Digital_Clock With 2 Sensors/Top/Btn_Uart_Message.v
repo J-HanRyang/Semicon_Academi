@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company          : Semicon_Academi
-// Engineer         : Joobin Hwang with Jiyun_Han
+// Engineer         : Jubin Hwang with Jiyun_Han
 // 
 // Create Date	    : 2025/07/27
 // Design Name      : Project_Digital_Clock
