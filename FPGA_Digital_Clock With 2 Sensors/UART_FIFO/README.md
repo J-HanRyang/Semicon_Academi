@@ -8,5 +8,5 @@
 - **Register_File** : A memory that temporarily stores data.
 
 #### Referenced Document
-Please find the project details and diagrams in the uploaded PDF file.
+Please find the project details and diagrams in the uploaded PDF file. <br>
 [Docs](https://github.com/J-HanRyang/Semicon_Academi/tree/main/FPGA_Digital_Clock%20With%202%20Sensors/UART_FIFO/Docs)
