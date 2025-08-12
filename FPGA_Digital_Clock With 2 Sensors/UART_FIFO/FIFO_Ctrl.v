@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company          : Semicon_Academi
-// Engineer         : Jiyun_Han
+// Engineer         : Jiyun_Han, Jubin Hwang
 // 
 // Create Date	    : 2025/07/18
 // Design Name      : Project_UART_FIFO
@@ -22,16 +22,16 @@ module FIFO_Ctrl(
 
     output          oFull,
     output          oEmpty,
-    output  [4:0]   oWrAddr,
-    output  [4:0]   oRdAddr    
+    output  [7:0]   oWrAddr,
+    output  [7:0]   oRdAddr    
     );
 
     // Reg & Wire
-    reg     [4:0]   rWrPtr_Cur;
-    reg     [4:0]   rWrPtr_Nxt;
+    reg     [7:0]   rWrPtr_Cur;
+    reg     [7:0]   rWrPtr_Nxt;
 
-    reg     [4:0]   rRdPtr_Cur;
-    reg     [4:0]   rRdPtr_Nxt;
+    reg     [7:0]   rRdPtr_Cur;
+    reg     [7:0]   rRdPtr_Nxt;
 
     reg             rFull_Cur;
     reg             rFull_Nxt;
