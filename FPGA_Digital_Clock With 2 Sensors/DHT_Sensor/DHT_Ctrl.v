@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company          : Semicon_Academi
-// Engineer         : Jiyun_Han
+// Engineer         : Jiyun_Han, Hyungang Heo
 // 
 // Create Date	    : 2025/07/25
 // Design Name      : DHT_Sensor
