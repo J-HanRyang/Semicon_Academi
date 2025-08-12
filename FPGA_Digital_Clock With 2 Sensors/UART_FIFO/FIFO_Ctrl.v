@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company          : Semicon_Academi
-// Engineer         : Jiyun_Han, Jubin Hwang
+// Engineer         : Jiyun_Han
 // 
 // Create Date	    : 2025/07/18
 // Design Name      : Project_UART_FIFO
