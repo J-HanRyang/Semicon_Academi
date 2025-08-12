@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company          : Semicon_Academi
-// Engineer         : Jiyun_Han
+// Engineer         : Jiyun_Han, Hyungang Heo, Hyuncheol Cho
 // 
 // Create Date	    : 2025/07/24
 // Design Name      : Ultra_Sensor
