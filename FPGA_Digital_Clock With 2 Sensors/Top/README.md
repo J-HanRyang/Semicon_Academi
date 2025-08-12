@@ -1,5 +1,6 @@
 ## Top Block Diagram
-<img width="1673" height="694" alt="image" src="https://github.com/user-attachments/assets/7bd572c3-f4db-447c-9e30-a19ed19110b0" />
+<img width="1104" height="528" alt="image" src="https://github.com/user-attachments/assets/68f1eed3-a7a8-4fb3-a896-f3bdaed389f4" />
+
 
 
 ## PC Commend
