@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company          : Semicon_Academi
-// Engineer         : Jiyun_Han
+// Engineer         : Jiyun_Han, Hyungang Heo, Hyuncheol Cho
 // 
 // Create Date      : 2025/07/24
 // Design Name      : Ultra_Sensor
@@ -37,7 +37,7 @@ module SR04_Ctrl(
 
     parameter       TICK        = $clog2(400*58),
                     DISTANCE    = $clog2(400),
-                    TIMEOUT     = $clog2(100), // 새로 추가
+                    TIMEOUT     = $clog2(100), // Add Error State
                     AUTOSTART   = $clog2(500);
    
     // Reg & Wire
@@ -54,10 +54,10 @@ module SR04_Ctrl(
     reg     [8:0]           rDistance_Cur;
     reg     [8:0]           rDistance_Nxt;
 
-    reg     [TIMEOUT-1:0]   rTimeout_Cur; // 새로 추가
-    reg     [TIMEOUT-1:0]   rTimeout_Nxt; // 새로 추가
-    reg     [AUTOSTART-1:0] rAutostart_Cur; // 새로 추가
-    reg     [AUTOSTART-1:0] rAutostart_Nxt; // 새로 추가
+    reg     [TIMEOUT-1:0]   rTimeout_Cur; // Add Error State
+    reg     [TIMEOUT-1:0]   rTimeout_Nxt; // Add Error State
+    reg     [AUTOSTART-1:0] rAutostart_Cur; // Add Aute Start
+    reg     [AUTOSTART-1:0] rAutostart_Nxt; // Add Aute Start
     
     /***********************************************
     // FSM 
@@ -71,8 +71,8 @@ module SR04_Ctrl(
             rTick_Cur       <= 0;
             rmSec_Cur       <= 0;
             rEcho_Prev      <= 0;
-            rTimeout_Cur    <= 0; // 새로 추가
-            rAutostart_Cur  <= 0; // 추가
+            rTimeout_Cur    <= 0; // Add Error State
+            rAutostart_Cur  <= 0; // Add Aute Start
             rDistance_Cur   <= 0;
         end else
         begin
@@ -80,8 +80,8 @@ module SR04_Ctrl(
             rTick_Cur       <= rTick_Nxt;
             rmSec_Cur       <= rmSec_Nxt;
             rEcho_Prev      <= iEcho;
-            rTimeout_Cur    <= rTimeout_Nxt; // 새로 추가
-            rAutostart_Cur  <= rAutostart_Nxt; // 추가
+            rTimeout_Cur    <= rTimeout_Nxt; // Add Error State
+            rAutostart_Cur  <= rAutostart_Nxt; // Add Aute Start
             rDistance_Cur   <= rDistance_Nxt;
         end    
     end
@@ -92,7 +92,7 @@ module SR04_Ctrl(
         rState_Nxt     = rState_Cur;
         rTick_Nxt      = rTick_Cur;
         rmSec_Nxt      = rmSec_Cur;
-        rTimeout_Nxt   = rTimeout_Cur; // 새로 추가
+        rTimeout_Nxt   = rTimeout_Cur; // Add Error State
         rAutostart_Nxt = rAutostart_Cur;
         rDistance_Nxt   = rDistance_Cur;
 
@@ -207,10 +207,7 @@ module SR04_Ctrl(
 
 
     // Output Decision
-    //wire    [DISTANCE-1:0]  wDistance   = (rTick_Cur / 58);
-
     assign  oTrig       =   (rState_Cur == p_Start) ? 1'b1      : 1'b0;
-    //assign  oDistance   =   (rState_Cur == p_End)   ? wDistance : wDistance;
     assign  oDistance   = rDistance_Cur;
     
 endmodule
