@@ -16,4 +16,5 @@
 - **Decoders** : This module converts decimal numbers into a format suitable for a 7-segment display.
 
 #### Referenced Document
-Please find the project details and diagrams in the uploaded PDF file.
+Please find the project details and diagrams in the uploaded PDF file. <br>
+https://github.com/J-HanRyang/Semicon_Academi/tree/main/FPGA_Digital_Clock%20With%202%20Sensors/Clock/docs
