@@ -17,4 +17,4 @@
 
 #### Referenced Document
 Please find the project details and diagrams in the uploaded PDF file. <br>
-[Docs](https://github.com/JHanRyang/Semicon_Academi/blob/main/FPGA_Digital_Clock%20With%202%20Sensors/Clock/Docs/Project_Clock_Diagram.pdf)
+[Docs](https://github.com/J-HanRyang/Semicon_Academi/tree/main/FPGA_Digital_Clock%20With%202%20Sensors/Clock/Docs)
