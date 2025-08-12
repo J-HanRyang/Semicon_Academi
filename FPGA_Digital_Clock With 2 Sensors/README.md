@@ -22,3 +22,9 @@ This project aims to establish a foundation for a smart IoT environment by using
 
 ### Development Environment
 - **FPGA Board** : Development was conducted using an FPGA board with Vivado.
+
+#### Referenced Document
+Please find the project details and diagrams in the uploaded PDF file. <br>
+[Docs Project](https://github.com/J-HanRyang/Semicon_Academi/tree/main/FPGA_Digital_Clock%20With%202%20Sensors/Docs) <br>
+[Docs_Clock](https://github.com/J-HanRyang/Semicon_Academi/tree/main/FPGA_Digital_Clock%20With%202%20Sensors/Clock/Docs) <br>
+[Docs_UART_FIFO](https://github.com/J-HanRyang/Semicon_Academi/tree/main/FPGA_Digital_Clock%20With%202%20Sensors/UART_FIFO/Docs)
