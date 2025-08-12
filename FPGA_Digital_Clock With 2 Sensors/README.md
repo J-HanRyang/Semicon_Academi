@@ -4,7 +4,7 @@
 
 - **Hyuncheol Cho** : Team Lead, responsible for the Ultrasonic Sensor module.
 
-- **Hyunhang Heo** : Responsible for the DHT11 sensor module and assisted with the Ultrasonic Sensor.
+- **Hyungang Heo** : Responsible for the DHT11 sensor module and assisted with the Ultrasonic Sensor.
 
 - **Jubin Hwang** : Responsible for the UART part and PC command implementation.
 
