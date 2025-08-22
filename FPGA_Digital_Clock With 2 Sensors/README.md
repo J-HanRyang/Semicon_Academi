@@ -1,6 +1,6 @@
 # Semicon Academi Verilog Final Project
 ## Team
-- **Jiyun Han**: Assisted the team lead, designed the overall project architecture, and supported module integration.
+- **Jiyun Han** : Assisted the team lead, designed the overall project architecture, and supported module integration.
 
 - **Cho** : Team Lead, responsible for the Ultrasonic Sensor module.
 
