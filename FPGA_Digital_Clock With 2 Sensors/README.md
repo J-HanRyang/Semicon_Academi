@@ -2,11 +2,11 @@
 ## Team
 - **Jiyun Han**: Assisted the team lead, designed the overall project architecture, and supported module integration.
 
-- **Hyuncheol Cho** : Team Lead, responsible for the Ultrasonic Sensor module.
+- **Cho** : Team Lead, responsible for the Ultrasonic Sensor module.
 
-- **Hyungang Heo** : Responsible for the DHT11 sensor module and assisted with the Ultrasonic Sensor.
+- **Heo** : Responsible for the DHT11 sensor module and assisted with the Ultrasonic Sensor.
 
-- **Jubin Hwang** : Responsible for the UART part and PC command implementation.
+- **Hwang** : Responsible for the UART part and PC command implementation.
 
   <br>
 
