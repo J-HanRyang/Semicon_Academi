@@ -1,4 +1,4 @@
-# Semicon Academi Verilog Final Project
+# Semicon Academi Verilog Final Project : **Digital_Clock**
 ## Team
 - **Jiyun Han** : Assisted the team lead, designed the overall project architecture, and supported module integration.
 
