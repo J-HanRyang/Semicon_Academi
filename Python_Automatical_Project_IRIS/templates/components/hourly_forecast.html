@@ -1,0 +1,24 @@
+{% if data.weather_data and data.weather_data.forecasts|length > 1 %}
+    <table class="forecast-table">
+        <thead>
+            <tr><th>시간</th><th>날씨</th><th>기온</th><th>강수</th></tr>
+        </thead>
+        <tbody>
+            {% for forecast in data.weather_data.forecasts[0:8] %}
+            <tr>
+                <td>{{ forecast.time.split(' ')[1][:2] }}시</td>
+                <td class="forecast-icon">{{ forecast.get('emoji', '🌍') }}</td>
+                <td>{{ '%.1f'|format(forecast.get('temp', 0)) }}°C</td>
+                <td>
+                    {{ '%.0f'|format(forecast.get('pop', 0) * 100) }}%
+                    {% if forecast.get('rain_3h', 0) > 0 %}
+                        ({{ '%.1f'|format(forecast.get('rain_3h', 0)) }}mm)
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>시간대별 예보를 불러올 수 없습니다.</p>
+{% endif %}

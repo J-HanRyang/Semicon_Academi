@@ -1,0 +1,20 @@
+<div class="weather-form">
+    <form action="/results" method="post" class="input-form">
+        <input type="hidden" name="news_keywords" value="{{ form.current_keyword }}">
+        <input type="text" name="weather_location" list="cities" placeholder="{{ form.cities_map.get(form.current_city, form.current_city) }}">
+        <datalist id="cities">
+            {% for code, name in form.cities_map.items() %}
+            <option value="{{ code }}">{{ name }}</option>
+            {% endfor %}
+        </datalist>
+        <button type="submit" class="form-button">변경</button>
+    </form>
+</div>
+
+<span class="input-form">
+    <form action="/results" method="post">
+        <input type="hidden" name="weather_location" value="{{ form.current_city }}">
+        <input type="text" name="news_keywords" placeholder="{{ form.current_keyword }}">
+        <button type="submit" class="form-button">변경</button>
+    </form>
+</span>

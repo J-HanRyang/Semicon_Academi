@@ -1,0 +1,48 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+    <table role="presentation" style="width:100%; border-bottom: 2px solid #4A90E2; margin-bottom: 20px;">
+        <tr>
+            <td style="text-align: left; font-size: 20px; color: #333; padding-bottom: 8px; font-weight: 600;">
+                <span>오늘의 날씨</span>
+            </td>
+            <td style="text-align: right; font-size: 14px; font-weight: normal; color: #666; padding-bottom: 8px;">
+                {% if data.weather_data and data.weather_data.city %}
+                    <span>({{ data.weather_data.city }} {{ data.current_time_str }} 기준)</span>
+                {% else %}
+                    <span>({{ data.current_time_str }} 기준)</span>
+                {% endif %}
+            </td>
+        </tr>
+    </table>
+
+    <div class="weather-card">
+        {% include "components/weather_card.html" %}
+        {% if data.weather_data and data.weather_data.ai_comment %}
+            <p class="ai-comment">"{{ data.weather_data.ai_comment }}"</p>
+        {% else %}
+            <p class="ai-comment">"오늘도 좋은 하루 보내세요!"</p>
+        {% endif %}
+    </div>
+
+    <h2 class="section-title">시간대별 예보</h2>
+    <div class="weather-card" style="padding: 10px;">
+        {% include "components/hourly_forecast.html" %}
+    </div>
+    
+    <h2 class="section-title">주요 뉴스</h2>
+    {% if data.news_data %}
+        {% for article in data.news_data %}
+            {% if not loop.first %}<hr class="news-divider">{% endif %}
+            {% include "components/news_card.html" %}
+        {% endfor %}
+    {% else %}
+        <p>표시할 뉴스가 없습니다.</p>
+    {% endif %}
+    
+    {% if data.web_url %}
+    <div class="footer-link-small">
+        <a href="{{ data.web_url }}" target="_blank">실시간 정보 확인 및 설정 변경하기 🚀</a>
+    </div>
+    {% endif %}
+{% endblock %}
