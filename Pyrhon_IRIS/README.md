@@ -1,4 +1,4 @@
-# Semicon Academi Python Final Project
+# Semicon Academi Python Autumation Project : **IRIS**
 ## Team_IRIS
 - **Jiyun Han** : Team Leader / Report & Sender_Manager, Web_Design
 
