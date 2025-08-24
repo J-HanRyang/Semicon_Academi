@@ -32,7 +32,7 @@ This allows users to reduce unnecessary information consumption and obtain infor
  
 - Each manager performs data processing tasks such as data collection, summarization, scheduling, and distribution.
 - Please check the link below for the system architecture structure. <br>
-[Managers](https://github.com/J-HanRyang/Semicon_Academi/tree/main/Pyrhon_IRIS/Managers)
+[Managers](https://github.com/J-HanRyang/Semicon_Academi/tree/main/Python_Automatical_Project_IRIS/Managers)
 <br>
 
 ### 🛠 Development Environment 
@@ -47,4 +47,4 @@ This allows users to reduce unnecessary information consumption and obtain infor
 
 #### 📜 Referenced Document
 Please find the project details and diagrams in the uploaded PDF file. <br>
-[Docs Project](https://github.com/J-HanRyang/Butler-Bot/tree/main/Docs)
+[Docs Project](https://github.com/J-HanRyang/Semicon_Academi/tree/main/Python_Automatical_Project_IRIS/Docs)
