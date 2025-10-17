@@ -23,6 +23,9 @@ The core is composed of a Control Unit and a DataPath, which interface with an e
 
 ***A block diagram of the final single-cycle CPU supporting all RV32I base instructions.***
 
+#### Study design for each module Study design for each module
+[Study](https://github.com/J-HanRyang/System_Verilog/tree/main/RV32I)
+
 
 <br>
 
