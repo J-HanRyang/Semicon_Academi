@@ -20,6 +20,7 @@ The core is composed of a Control Unit and a DataPath, which interface with an e
 <br>
 
 <img width="1252" height="903" alt="image" src="https://github.com/user-attachments/assets/37b4f6b3-5b40-4832-b878-cd77d8fb0ff3" />
+
 ***A block diagram of the final single-cycle CPU supporting all RV32I base instructions.***
 
 
@@ -32,5 +33,5 @@ The core is composed of a Control Unit and a DataPath, which interface with an e
 <br>
 
 #### 📜 Referenced Document
-Please find the project details and diagrams in the uploaded PDF file.
+Please find the project details and diagrams in the uploaded PDF file. <br>
 [Docs]()
