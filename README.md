@@ -5,3 +5,6 @@ Semicon_Academi Project
 
 ## 2. Python_Automatical_Project_IRIS - Python, Html
 [2. IRIS](https://github.com/J-HanRyang/Semicon_Academi/tree/main/Python_Automatical_Project_IRIS)
+
+## 3. RISC-V RV32I CPU Single Cycle Core - SystemVerilog
+[3. RV32I Single Cycle](https://github.com/J-HanRyang/Semicon_Academi/tree/main/RISC_V(RV32I)_SingleCycle)
