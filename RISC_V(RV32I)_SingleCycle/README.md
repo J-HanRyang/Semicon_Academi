@@ -34,4 +34,4 @@ The core is composed of a Control Unit and a DataPath, which interface with an e
 
 #### 📜 Referenced Document
 Please find the project details and diagrams in the uploaded PDF file. <br>
-[Docs]()
+[Docs](https://github.com/J-HanRyang/Semicon_Academi/tree/main/RISC_V(RV32I)_SingleCycle/Docs)
