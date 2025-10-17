@@ -1,7 +1,7 @@
 # Semicon Academi CPU Project : **RISC_V(RV32I) - Single Cycle**
 ## Project Summary
 This project is a 32bit single cycle CPU core based on the RISC-V Instruction Set Architecture, implemented in SystemVerilog. <br>
-The main goal is to understanding computer architecture by incrementally designing a processor that supports the full RV32I base integer instruction set, from R-Type through J-Type.
+The main goal is to understand computer architecture by incrementally designing a processor that supports the full RV32I base integer instruction set, from R-Type through J-Type.
 
 <br>
 
@@ -23,7 +23,7 @@ The core is composed of a Control Unit and a DataPath, which interface with an e
 
 ***A block diagram of the final single-cycle CPU supporting all RV32I base instructions.***
 
-**Study design for each module Study design for each module** <br>
+**Study design for each module** <br>
 [Study](https://github.com/J-HanRyang/System_Verilog/tree/main/RV32I)
 
 
