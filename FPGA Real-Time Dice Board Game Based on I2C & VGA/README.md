@@ -7,6 +7,12 @@
 
 <br>
 
+<div align="center">
+  <img width="2300" height="1297" alt="image" src="https://github.com/user-attachments/assets/96678620-5fd9-44e6-a7ae-f2a7f10fa865" />
+</div>
+
+<br>
+
 ## Project Summary
 This project implements a real-time FPGA-based dice board game system using a Master–Slave architecture. <br>
 A live video stream from an OV7670 camera is used to detect dice values by identifying red pixels, <br>
