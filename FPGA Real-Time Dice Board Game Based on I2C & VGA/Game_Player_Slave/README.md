@@ -8,7 +8,7 @@
 - Apply real-time visual filters based on received states
 - Output synchronized VGA display
 
-### I2C Communication
+### 🔗 I2C Communication
 - **I2C Master Controller**
   - Sends game state data to Slave boards
   - Introduced a 3ms interval between transactions to prevent BUSY conflicts
