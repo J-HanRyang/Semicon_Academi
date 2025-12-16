@@ -1,5 +1,7 @@
 # Game_Player Slave
-<img width="667" height="386" alt="image" src="https://github.com/user-attachments/assets/f37c4753-5a32-4022-9e86-19ddac206c2d" />
+<div align="center">
+  <img width="667" height="386" alt="image" src="https://github.com/user-attachments/assets/f37c4753-5a32-4022-9e86-19ddac206c2d" />
+</div>
 
 ## Slave Boards
 - Receive game state registers from the Master
