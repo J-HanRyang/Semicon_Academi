@@ -1,9 +1,9 @@
 # FPGA Real-Time Dice Board Game Based on I2C & VGA
 ## Team
-- **Jiyun Han** : Player Movement / Visual Filter / I2C Slave / Top Integration
-- **Gwak** : Team Leader / Game_Logic / I2C Master / SCCB
-- **Hwang** : Dice Detector / VGA Display / Presentation
-- **Jin** : Back Ground Text / Video 
+- **Jiyun Han** : Player Movement logic, Visual filter effects, I2C Slave & Top integration
+- **Gwak** : Team Leader / Game_Logic design, I2C Master & SCCB
+- **Hwang** : Dice detection logic, VGA display system, Presentation
+- **Jin** : Background text rendering & Video editing
 
 <br>
 
@@ -13,7 +13,9 @@ A live video stream from an OV7670 camera is used to detect dice values by ident
 and the detected results drive the game logic.
 
 Game states and events are synchronized across multiple FPGA boards using I2C communication, <br>
-while the game status is visualized in real time through VGA output with dynamic visual effects.
+while the game status is visualized in real time through VGA output with dynamic visual effects. <br>
+<br>
+The system integrates camera processing, FSM-based game logic, I2C communication, and VGA output into a single real-time hardware platform.
 <br>
 
 ### ⚡ Key Features
